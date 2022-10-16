@@ -1,5 +1,5 @@
-<!--  This file is app/views/movies/index.html.erb -->
-<h2>All Movies</h2>
+<!--  This file is app/views/movies/match.html.erb -->
+<h2>Similar Movies As <% @movie.director %></h2>
 
 <%#  Part 2: Start here... %>
 
@@ -14,7 +14,7 @@
     </tr>
   </thead>
   <tbody>
-    <% @movies.each do |movie| %>
+    <% @movie_same_director.each do |movie| %>
       <tr>
         <td>
           <%= movie.title %>
