@@ -27,6 +27,8 @@ module NavigationHelpers
    
       # lead to match_movie_path
     when /^the Similar Movies page for "([^"]+)"$/ then match_movie_path(Movie.find_by_title($1).id)
+    
+    when /^the create movie page$/ then new_movie_path()
 
     else
       begin
